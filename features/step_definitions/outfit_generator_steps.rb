@@ -1,5 +1,5 @@
 When(/^I click the dress me up link$/) do
-  click_link('Dress Me Up!')
+  click_link('Dress Me Up')
 end
 
 Given(/^I select an option from the dropdown$/) do
@@ -7,7 +7,7 @@ Given(/^I select an option from the dropdown$/) do
 end
 
 When(/^I click the Let's go button$/) do
-  click_button("Let's Go!")
+  click_button("Go")
 end
 
 Then(/^I should see an outfit$/) do

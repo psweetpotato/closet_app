@@ -16,9 +16,13 @@ end
 
 When(/^I sign up$/) do
   fill_in 'Name', :with => 'Testy'
-  fill_in 'Email', :with => 'test16@example.com'
+  fill_in 'Email', :with => 'test19@example.com'
   fill_in 'Password', :with => 'testpass'
   fill_in 'City', :with => 'Brooklyn'
   fill_in 'State', :with => 'NY'
-  click_button('Create User')
+  click_button('Ok')
+end
+
+Then(/^I should see my new dashboard$/) do
+  expect(page).to have_content("Testy")
 end

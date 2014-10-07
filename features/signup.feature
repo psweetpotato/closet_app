@@ -11,4 +11,4 @@ Scenario: Visiting the sign up page
 Scenario: Signing up
   Given I am at the sign up page
   When I sign up
-  Then I should see my dashboard
+  Then I should see my new dashboard

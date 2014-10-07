@@ -1,3 +1,4 @@
+
 When(/^I click the log in button$/) do
   click_button "Login"
 end
@@ -19,7 +20,7 @@ end
 Then(/^I should see my dashboard$/) do
   expect(page).to have_content("Sarah")
 end
+
 Then(/^I should see the splash page$/) do
-  save_and_open_page
   expect(page).to have_css('body')
 end
